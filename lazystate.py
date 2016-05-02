@@ -14,8 +14,8 @@
 # your checks have confirmed success or failure:
 #
 # from lazyState import lazyState
-# Success: lazyState(checkName).updateState()
-# Failure: lazyState(checkName, True).updateState()
+# Success: lazyState(<ls_service>).updateState()
+# Failure: lazyState(<ls_service>, True).updateState()
 #
 # By default, state files are stored in /tmp/states/<ls_service>.lazystate,
 # will trigger a warning after 3 failures and a critical after 5.  To override
