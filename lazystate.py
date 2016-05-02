@@ -31,6 +31,7 @@
 import json
 import time
 import os
+import md5
 
 class lazyState(object):
 
