@@ -50,7 +50,7 @@ Additionally, some customization can be done by passing additional parameters in
 These are passed into the class as follows:
 
 ```python
-lazyState("my_check_name", True, 5, 10, "/tmp/lazystate", ".lzyst")
+lazyState("my_check_name", True, 5, 10, "/tmp/lazystate", ".lzyst").updateState() 
 ```
 
 ## Contributing
