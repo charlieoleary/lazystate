@@ -38,12 +38,20 @@ else:
   sys.exit( lazyState("my_check_name", True).updateState() )
 ```
 
+It's important to note that the check name ("my_check_name" in this example) MUST be a consistent string.
+
 Additionally, some customization can be done by passing additional parameters into the lazyState class.  These include:
 
 * Fails before warning (default: 3)
 * Fails before critical (default: 5)
 * State file storage directory (default: /tmp/states)
-* Sttate file storage extension (default: .lazystate)
+* State file storage extension (default: .lazystate)
+
+These are passed into the class as follows:
+
+```python
+lazyState("my_check_name", True, 5, 10, "/tmp/lazystate", ".lzyst")
+```
 
 ## Contributing
 
@@ -56,6 +64,11 @@ Additionally, some customization can be done by passing additional parameters in
 ## History
 
 2016-05-02: Initial Release
+
+## To Do
+
+* Hash file identifier.
+* Handle argument passing better.
 
 ## Credits
 
